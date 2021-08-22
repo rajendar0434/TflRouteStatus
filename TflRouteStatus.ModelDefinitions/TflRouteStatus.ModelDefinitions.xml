@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TflRouteStatus.ModelDefinitions</name>
+    </assembly>
+    <members>
+        <member name="T:TflRouteStatus.ModelDefinitions.InValidRouteResponse">
+            <summary>
+            Response definition when routs is not valid
+            </summary>
+        </member>
+        <member name="P:TflRouteStatus.ModelDefinitions.InValidRouteResponse.Type">
+            <summary>
+            Type
+            </summary>
+        </member>
+        <member name="P:TflRouteStatus.ModelDefinitions.InValidRouteResponse.TimeStampUtc">
+            <summary>
+            Time
+            </summary>
+        </member>
+        <member name="P:TflRouteStatus.ModelDefinitions.InValidRouteResponse.ExceptionType">
+            <summary>
+            Exception type
+            </summary>
+        </member>
+        <member name="P:TflRouteStatus.ModelDefinitions.InValidRouteResponse.HttpStatusCode">
+            <summary>
+            HTTP STatus Code
+            </summary>
+        </member>
+        <member name="P:TflRouteStatus.ModelDefinitions.InValidRouteResponse.HttpStatus">
+            <summary>
+            HTTP Status
+            </summary>
+        </member>
+        <member name="P:TflRouteStatus.ModelDefinitions.InValidRouteResponse.RelativeUri">
+            <summary>
+            Relative URL
+            </summary>
+        </member>
+        <member name="P:TflRouteStatus.ModelDefinitions.InValidRouteResponse.Message">
+            <summary>
+            Message
+            </summary>
+        </member>
+        <member name="T:TflRouteStatus.ModelDefinitions.ValidRouteResponse">
+            <summary>
+            Response definition when Routs is valid
+            </summary>
+        </member>
+        <member name="P:TflRouteStatus.ModelDefinitions.ValidRouteResponse.Type">
+            <summary>
+            Type
+            </summary>
+        </member>
+        <member name="P:TflRouteStatus.ModelDefinitions.ValidRouteResponse.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:TflRouteStatus.ModelDefinitions.ValidRouteResponse.DisplayName">
+            <summary>
+            Display Name
+            </summary>
+        </member>
+        <member name="P:TflRouteStatus.ModelDefinitions.ValidRouteResponse.StatusSeverity">
+            <summary>
+            Status Severity
+            </summary>
+        </member>
+        <member name="P:TflRouteStatus.ModelDefinitions.ValidRouteResponse.StatusSeverityDescription">
+            <summary>
+            Status Severity Description
+            </summary>
+        </member>
+        <member name="P:TflRouteStatus.ModelDefinitions.ValidRouteResponse.Bounds">
+            <summary>
+            Bounds
+            </summary>
+        </member>
+        <member name="P:TflRouteStatus.ModelDefinitions.ValidRouteResponse.Envelope">
+            <summary>
+            Envelope
+            </summary>
+        </member>
+        <member name="P:TflRouteStatus.ModelDefinitions.ValidRouteResponse.Url">
+            <summary>
+            Url
+            </summary>
+        </member>
+    </members>
+</doc>

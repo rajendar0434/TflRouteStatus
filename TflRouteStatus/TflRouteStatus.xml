@@ -1,0 +1,208 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TflRouteStatus</name>
+    </assembly>
+    <members>
+        <member name="T:TflRouteStatus.Action.CallAPI">
+            <summary>
+            Call TFL API
+            </summary>
+        </member>
+        <member name="M:TflRouteStatus.Action.CallAPI.GetAPIResponse(System.String,System.String,System.String,System.String)">
+            <summary>
+            Get API response by calling Tfl API
+            </summary>
+            <param name="api_url">API Url</param>
+            <param name="app_id">App Id</param>
+            <param name="app_key">App Key</param>
+            <param name="route">route</param>
+            <returns></returns>
+        </member>
+        <member name="T:TflRouteStatus.Action.RouteStatus">
+            <summary>
+            Route Status Class
+            </summary>
+        </member>
+        <member name="M:TflRouteStatus.Action.RouteStatus.#ctor(TflRouteStatus.Interfaces.ICallAPI)">
+            <summary>
+            Route Status Constructor
+            </summary>
+            <param name="callAPI"></param>
+        </member>
+        <member name="M:TflRouteStatus.Action.RouteStatus.ValidateInputs(System.String,System.String,System.String)">
+            <summary>
+            Validate inputs
+            </summary>
+            <param name="api_url">API Url</param>
+            <param name="app_id">App Id</param>
+            <param name="app_key">App Key</param>
+            <returns>true or false</returns>
+        </member>
+        <member name="M:TflRouteStatus.Action.RouteStatus.FindRouteStatus(System.String,System.String,System.String,System.String)">
+            <summary>
+            Find Route Status by Calling CallAPI() method
+            </summary>
+            <param name="api_url">API Url</param>
+            <param name="app_id">APP Id</param>
+            <param name="app_key">App Key</param>
+            <param name="route">route</param>
+            <returns>response</returns>
+        </member>
+        <member name="T:TflRouteStatus.Common">
+            <summary>
+            Common class to store all Constants 
+            </summary>
+        </member>
+        <member name="F:TflRouteStatus.Common.CONFIG_FILE_NAME">
+            <summary>
+            Config file name
+            </summary>
+        </member>
+        <member name="F:TflRouteStatus.Common.ROUTE_API_URL">
+            <summary>
+            Route API URL config name
+            </summary>
+        </member>
+        <member name="F:TflRouteStatus.Common.APP_INFO">
+            <summary>
+            Route App Info
+            </summary>
+        </member>
+        <member name="F:TflRouteStatus.Common.APP_ID">
+            <summary>
+            App Id
+            </summary>
+        </member>
+        <member name="F:TflRouteStatus.Common.APP_KEY">
+            <summary>
+            App Key
+            </summary>
+        </member>
+        <member name="F:TflRouteStatus.Common.USER_AGENT">
+            <summary>
+            User Agent for Http client
+            </summary>
+        </member>
+        <member name="T:TflRouteStatus.Interfaces.ICallAPI">
+            <summary>
+            ICallAPi interface
+            </summary>
+        </member>
+        <member name="M:TflRouteStatus.Interfaces.ICallAPI.GetAPIResponse(System.String,System.String,System.String,System.String)">
+            <summary>
+            GetAPIResponse interface method
+            </summary>
+            <param name="api_url">API Url</param>
+            <param name="app_id">App Id</param>
+            <param name="app_key">App Key</param>
+            <param name="route">route</param>
+            <returns></returns>
+        </member>
+        <member name="T:TflRouteStatus.Interfaces.IRouteStatus">
+            <summary>
+            Route Status interface
+            </summary>
+        </member>
+        <member name="M:TflRouteStatus.Interfaces.IRouteStatus.ValidateInputs(System.String,System.String,System.String)">
+            <summary>
+            Validate all inputs from config
+            </summary>
+            <param name="api_url">API Url</param>
+            <param name="app_id">App Id</param>
+            <param name="app_key">App Key</param>
+            <returns>true or false</returns>
+        </member>
+        <member name="M:TflRouteStatus.Interfaces.IRouteStatus.FindRouteStatus(System.String,System.String,System.String,System.String)">
+            <summary>
+            Find Route Status
+            </summary>
+            <param name="api_url">API Url</param>
+            <param name="app_id">App Id</param>
+            <param name="app_key">App Key</param>
+            <param name="route">route</param>
+            <returns>response</returns>
+        </member>
+        <member name="T:TflRouteStatus.Program">
+            <summary>
+            Program Class - Execution starts here
+            </summary>
+        </member>
+        <member name="M:TflRouteStatus.Program.Main(System.String[])">
+            <summary>
+            Main method
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:TflRouteStatus.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            Create Host Builder and set up dependency injection
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:TflRouteStatus.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:TflRouteStatus.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:TflRouteStatus.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:TflRouteStatus.Resources.EmptyRouteErrorMsg">
+            <summary>
+              Looks up a localized string similar to Please provide route.
+            </summary>
+        </member>
+        <member name="P:TflRouteStatus.Resources.Error_Exit_Code">
+            <summary>
+              Looks up a localized string similar to 1.
+            </summary>
+        </member>
+        <member name="P:TflRouteStatus.Resources.ExceptionMsg">
+            <summary>
+              Looks up a localized string similar to Error while processing your request, Exception: {0}.
+            </summary>
+        </member>
+        <member name="P:TflRouteStatus.Resources.InValidRouteMsg">
+            <summary>
+              Looks up a localized string similar to {0} is not a valid road.
+            </summary>
+        </member>
+        <member name="P:TflRouteStatus.Resources.MediaTypeWithQualityHeaderValue">
+            <summary>
+              Looks up a localized string similar to application/vnd.github.v3+json.
+            </summary>
+        </member>
+        <member name="P:TflRouteStatus.Resources.Success_Exit_Code">
+            <summary>
+              Looks up a localized string similar to 0.
+            </summary>
+        </member>
+        <member name="P:TflRouteStatus.Resources.UserAgentMsg">
+            <summary>
+              Looks up a localized string similar to TLF Route status checker.
+            </summary>
+        </member>
+        <member name="P:TflRouteStatus.Resources.ValidationFailedMsg">
+            <summary>
+              Looks up a localized string similar to Input validation failed, please check configuration.
+            </summary>
+        </member>
+        <member name="P:TflRouteStatus.Resources.ValidRouteMsg">
+             <summary>
+               Looks up a localized string similar to The status of the {0} is as follows
+            Road Status is {1}
+            Road Status Description is {2}.
+             </summary>
+        </member>
+    </members>
+</doc>

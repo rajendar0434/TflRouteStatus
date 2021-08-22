@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TflRouteStatus.Tests</name>
+    </assembly>
+    <members>
+        <member name="T:TflRouteStatus.Tests.TflRouteStatusTests">
+            <summary>
+            All Test cases using XUnit
+            </summary>
+        </member>
+        <member name="M:TflRouteStatus.Tests.TflRouteStatusTests.#ctor">
+            <summary>
+            TflRouteStatusTests Constructor
+            </summary>
+        </member>
+        <member name="M:TflRouteStatus.Tests.TflRouteStatusTests.Dispose">
+            <summary>
+            Dispose objects
+            </summary>
+        </member>
+        <member name="M:TflRouteStatus.Tests.TflRouteStatusTests.ValidateInputs_ReturnFalse_WhenNoInputs">
+            <summary>
+            Validate inputs and return false when no inputs
+            </summary>
+            <returns>true</returns>
+        </member>
+        <member name="M:TflRouteStatus.Tests.TflRouteStatusTests.ValidateInputs_ReturnTrue_WhenInputsAvailable">
+            <summary>
+            Validate inputs and return true when inputs available
+            </summary>
+            <returns>true</returns>
+        </member>
+        <member name="M:TflRouteStatus.Tests.TflRouteStatusTests.FindRouteStatus_ReturnInvalidResponse_WhenInCorrectRoute">
+            <summary>
+            Find RouteStatus return invalid response when invalid route
+            </summary>
+            <returns>true</returns>
+        </member>
+        <member name="M:TflRouteStatus.Tests.TflRouteStatusTests.FindRouteStatus_ReturnValidResponse_WhenCorrectRoute">
+            <summary>
+            Find RouteStatus return valid response when valid route
+            </summary>
+            <returns>true</returns>
+        </member>
+        <member name="M:TflRouteStatus.Tests.TflRouteStatusTests.FindRouteStatus_ReturnNonZeroExitCode_WhenInCorrectRoute">
+            <summary>
+            Find RouteStatus return non-zero exit code when invalid route
+            </summary>
+            <returns>true</returns>
+        </member>
+        <member name="M:TflRouteStatus.Tests.TflRouteStatusTests.FindRouteStatus_ReturnZeroExitCode_WhenCorrectRoute">
+            <summary>
+            Find RouteStatus return zero exit code when valid route
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TflRouteStatus.Tests.TflRouteStatusTests.ValidAPIResponse">
+            <summary>
+            Valid API response
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TflRouteStatus.Tests.TflRouteStatusTests.InValidAPIResponse">
+            <summary>
+            InValid API response
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
